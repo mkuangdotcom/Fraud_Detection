@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fraudulent Transaction Detection Model</title>
+    <style>
+        /* CSS for centering images and table */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,7 +55,7 @@
 
 <h3>1. Data Analysis</h3>
 <p><strong>Imbalance Issue</strong>: The dataset is imbalanced, meaning there are significantly fewer fraudulent transactions compared to legitimate ones. This imbalance could skew the model's performance.</p>
-<img src="https://github.com/user-attachments/assets/93f7ee14-0d9d-49b8-8d6b-90a8a393fd77" alt="Before SMOTE" width="400">
+<img src="https://github.com/user-attachments/assets/93f7ee14-0d9d-49b8-8d6b-90a8a393fd77" alt="Before SMOTE" class="center" width="400">
 
 <h3>2. Data Preprocessing</h3>
 <p>To address the imbalance, we apply the <strong>Synthetic Minority Over-sampling Technique (SMOTE)</strong>. SMOTE helps generate synthetic samples for the minority class (fraudulent transactions), improving the model's ability to detect fraud.</p>
@@ -51,7 +73,7 @@
         </ul>
     </li>
 </ol>
-<img src="https://github.com/user-attachments/assets/3fa8e454-2633-431d-b1fd-f5cb657fd935" alt="After SMOTE" width="400">
+<img src="https://github.com/user-attachments/assets/3fa8e454-2633-431d-b1fd-f5cb657fd935" alt="After SMOTE" class="center" width="400">
 
 <hr />
 
@@ -79,12 +101,12 @@ nn_model = keras.Sequential([
 
 <h4>Training History</h4>
 <p>The training and validation accuracy do not show significant divergence or fluctuations, indicating the model is performing well despite the class imbalance.</p>
-<img src="https://github.com/user-attachments/assets/3d574226-7b1a-4171-8c87-3c92e2000081" alt="Training History" width="400">
+<img src="https://github.com/user-attachments/assets/3d574226-7b1a-4171-8c87-3c92e2000081" alt="Training History" class="center" width="400">
 
 <h4>Confusion Matrix</h4>
-<img src="https://github.com/user-attachments/assets/6986c0cb-7382-4133-bd1f-9b8b773ce0fb" alt="Confusion Matrix" width="400">
+<img src="https://github.com/user-attachments/assets/6986c0cb-7382-4133-bd1f-9b8b773ce0fb" alt="Confusion Matrix" class="center" width="400">
 
-<table border="1">
+<table>
     <thead>
         <tr>
             <th>Metric</th>
