@@ -84,6 +84,7 @@ nn_model = keras.Sequential([
   <img src="https://github.com/user-attachments/assets/6986c0cb-7382-4133-bd1f-9b8b773ce0fb" />
 </p>
 
+<h4>Classification Report</h4>
 
 <table border="1">
     <thead>
