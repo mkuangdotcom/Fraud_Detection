@@ -24,9 +24,9 @@
 
 <h3>1. Data Analysis</h3>
 <p><strong>Imbalance Issue</strong>: The dataset is imbalanced, meaning there are significantly fewer fraudulent transactions compared to legitimate ones. This imbalance could skew the model's performance.</p>
-<div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/93f7ee14-0d9d-49b8-8d6b-90a8a393fd77" alt="Before SMOTE" width="400">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/93f7ee14-0d9d-49b8-8d6b-90a8a393fd77" />
+</p>
 
 <h3>2. Data Preprocessing</h3>
 <p>To address the imbalance, we apply the <strong>Synthetic Minority Over-sampling Technique (SMOTE)</strong>. SMOTE helps generate synthetic samples for the minority class (fraudulent transactions), improving the model's ability to detect fraud.</p>
@@ -44,9 +44,9 @@
         </ul>
     </li>
 </ol>
-<div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/3fa8e454-2633-431d-b1fd-f5cb657fd935" alt="After SMOTE" width="400">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3fa8e454-2633-431d-b1fd-f5cb657fd935" />
+</p>
 
 <hr />
 
@@ -73,15 +73,17 @@ nn_model = keras.Sequential([
 <h3>4. Results</h3>
 
 <h4>Training History</h4>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3d574226-7b1a-4171-8c87-3c92e2000081" />
+</p>
+
 <p>The training and validation accuracy do not show significant divergence or fluctuations, indicating the model is performing well despite the class imbalance.</p>
-<div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/3d574226-7b1a-4171-8c87-3c92e2000081" alt="Training History" width="400">
-</div>
 
 <h4 style="text-align: center;">Confusion Matrix</h4>
-<div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/6986c0cb-7382-4133-bd1f-9b8b773ce0fb" alt="Confusion Matrix" width="400">
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6986c0cb-7382-4133-bd1f-9b8b773ce0fb" />
+</p>
+
 
 <table border="1">
     <thead>
